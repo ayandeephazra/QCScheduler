@@ -1,0 +1,59 @@
+module id # (parameter DEPTH = 64, DATAWIDTH = 32)(
+		input clk,
+		input rst_n,
+		input [31:0] instruction,			// from I CACHE
+		input valid,						// valid is high for 1 cycle when new instruction is available
+		output queue_full,					// if high, then do not overwrite data at instruction
+		output queue_empty,					// if high, then queue empty
+		output wrap_around
+	);
+	
+	/////////////////////////////////////////////////////////////////////////////////////
+	///* I-WORD = <start_time 31:16| op_code 15:14| op_1 13:10| op_2 9:6| dest 5:2] *///
+	///////////////////////////////////////////////////////////////////////////////////
+	
+	/* operand signals */
+	wire [15:0] start_time;
+	wire [1:0] op_code;
+	wire [2:0] op_1;
+	wire [2:0] op_2;
+	wire [2:0] dest;
+	
+	/* queue signals */
+	parameter PTRWIDTH = $clog2(DEPTH);
+	reg [DATAWIDTH - 1:0] queue [DEPTH];
+	reg [PTRWIDTH-1:0] iter;
+	reg [PTRWIDTH:0] head;
+	reg [PTRWIDTH:0] tail;
+	
+	/* operand comb logic */
+	assign start_time = instruction[31:16];
+	assign op_code = instruction[15:14];
+	assign op_1 = instruction[13:10];
+	assign op_2 = instruction[9:6];
+	assign dest = instruction[5:2];
+	
+	/*queue logic*/
+	assign wrap_around = head[PTRWIDTH] ^ tail[PTRWIDTH];
+	assign queue_full = (wrap_around & (head[PTRWIDTH-1:0] == tail[PTRWIDTH-1:0])); 
+	assign queue_empty = (head[PTRWIDTH-1:0] == tail[PTRWIDTH-1:0]);
+	
+	always_ff @ (posedge clk or negedge rst_n) begin
+		if(!rst_n) begin
+			head = 7'b0000000;
+			tail = 7'b0000000;
+			//for (iter = 0; iter < 64; iter++)
+			//	queue[iter[5:0]] <= {32{1'bx}};
+		end else if (valid) begin
+			if (!queue_full) begin
+				queue[head[PTRWIDTH-1:0]] <= {start_time, op_code, op_1, op_2, dest};
+				head <= head + 1;
+			end
+		end
+	end
+	
+	/* combine multiple instrucitons ^ */
+	/* send stats, setup a valid */
+	/* op lookup on the side */
+
+endmodule

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NotepadPlus>
+    <Session activeView="0">
+        <mainView activeIndex="0">
+            <File firstVisibleLine="48" xOffset="0" scrollWidth="2114" startPos="2925" endPos="2925" selMode="0" offset="0" wrapCount="1" lang="Verilog" encoding="-1" userReadOnly="no" filename="C:\Users\Ayan Deep Hazra\Desktop\Semesters\FALL 2023\CS 699 QC\scheduler\src\id.sv" backupFilePath="" originalFileLastModifTimestamp="-141653612" originalFileLastModifTimestampHigh="31072916" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
+            <File firstVisibleLine="12" xOffset="0" scrollWidth="1596" startPos="690" endPos="690" selMode="0" offset="0" wrapCount="1" lang="Verilog" encoding="-1" userReadOnly="no" filename="C:\Users\Ayan Deep Hazra\Desktop\Semesters\FALL 2023\CS 699 QC\scheduler\src\id_test.sv" backupFilePath="" originalFileLastModifTimestamp="1353539661" originalFileLastModifTimestampHigh="31072915" tabColourId="-1" mapFirstVisibleDisplayLine="-1" mapFirstVisibleDocLine="-1" mapLastVisibleDocLine="-1" mapNbLine="-1" mapHigherPos="-1" mapWidth="-1" mapHeight="-1" mapKByteInDoc="512" mapWrapIndentMode="-1" mapIsWrap="no" />
+        </mainView>
+        <subView activeIndex="0" />
+    </Session>
+</NotepadPlus>

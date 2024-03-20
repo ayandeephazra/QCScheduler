@@ -1,0 +1,39 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile {C:/Users/Ayan Deep Hazra/Desktop/Repos/CS 699 QC/scheduler/src/qc.mpf}
+# Loading project qc
+vsim -gui work.id_test
+# vsim -gui work.id_test 
+# Start time: 22:30:49 on Feb 07,2024
+# Loading sv_std.std
+# Loading work.id_test
+# Loading work.id
+# ** Warning: (vsim-3015) C:/Users/Ayan Deep Hazra/Desktop/Semesters/FALL 2023/CS 699 QC/scheduler/src/id_test.sv(15): [PCDPC] - Port size (57) does not match connection size (56) for port 'instruction'. The port definition is at: C:/Users/Ayan Deep Hazra/Desktop/Semesters/FALL 2023/CS 699 QC/scheduler/src/id.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /id_test/id0 File: C:/Users/Ayan Deep Hazra/Desktop/Semesters/FALL 2023/CS 699 QC/scheduler/src/id.sv
+run -all
+# ** Note: $stop    : C:/Users/Ayan Deep Hazra/Desktop/Semesters/FALL 2023/CS 699 QC/scheduler/src/id_test.sv(54)
+#    Time: 300665 ps  Iteration: 1  Instance: /id_test
+# Break in Module id_test at C:/Users/Ayan Deep Hazra/Desktop/Semesters/FALL 2023/CS 699 QC/scheduler/src/id_test.sv line 54
+add wave -position insertpoint  \
+sim:/id_test/clk \
+sim:/id_test/rst_n \
+sim:/id_test/instr \
+sim:/id_test/valid \
+sim:/id_test/queue_full \
+sim:/id_test/queue_empty \
+sim:/id_test/wrap_around \
+sim:/id_test/i
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ayan Deep Hazra  Hostname: LAPTOP-F99DH5B4  ProcessID: 17160
+#           Attempting to use alternate WLF file "./wlftztkhtb".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftztkhtb
+run -all
+restart
+# ** Warning: (vsim-3015) C:/Users/Ayan Deep Hazra/Desktop/Semesters/FALL 2023/CS 699 QC/scheduler/src/id_test.sv(15): [PCDPC] - Port size (57) does not match connection size (56) for port 'instruction'. The port definition is at: C:/Users/Ayan Deep Hazra/Desktop/Semesters/FALL 2023/CS 699 QC/scheduler/src/id.sv(4).
+#    Time: 0 ps  Iteration: 0  Instance: /id_test/id0 File: C:/Users/Ayan Deep Hazra/Desktop/Semesters/FALL 2023/CS 699 QC/scheduler/src/id.sv
+run -all
+# ** Note: $stop    : C:/Users/Ayan Deep Hazra/Desktop/Semesters/FALL 2023/CS 699 QC/scheduler/src/id_test.sv(54)
+#    Time: 300665 ps  Iteration: 1  Instance: /id_test
+# Break in Module id_test at C:/Users/Ayan Deep Hazra/Desktop/Semesters/FALL 2023/CS 699 QC/scheduler/src/id_test.sv line 54
+# End time: 02:57:32 on Feb 08,2024, Elapsed time: 4:26:43
+# Errors: 0, Warnings: 4

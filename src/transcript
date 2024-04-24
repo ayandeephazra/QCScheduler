@@ -65,3 +65,82 @@ run -all
 # ** Note: $stop    : C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv(51)
 #    Time: 300015 ps  Iteration: 1  Instance: /sched_test
 # Break in Module sched_test at C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv line 51
+# Compile of scheduler.sv was successful.
+# Compile of test.sv was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.sched_test
+# Loading work.scheduler
+run -all
+# ** Note: $stop    : C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv(51)
+#    Time: 300015 ps  Iteration: 1  Instance: /sched_test
+# Break in Module sched_test at C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv line 51
+# Compile of scheduler.sv was successful.
+restart
+# Loading work.scheduler
+# Warning in wave window restart: (vish-4014) No objects found matching '/sched_test/isc0/status_wire'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/sched_test/isc0/start_time'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/sched_test/isc0/dest'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/sched_test/isc0/op_1'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/sched_test/isc0/op_2'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/sched_test/isc0/op_code'. 
+run -all
+# ** Note: $stop    : C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv(51)
+#    Time: 300015 ps  Iteration: 1  Instance: /sched_test
+# Break in Module sched_test at C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv line 51
+# Compile of scheduler.sv was successful.
+# Compile of test.sv was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+# Compile of test.sv was successful with warnings.
+restart
+# Loading work.sched_test
+# Loading work.scheduler
+run -all
+# ** Note: $stop    : C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv(51)
+#    Time: 300015 ps  Iteration: 1  Instance: /sched_test
+# Break in Module sched_test at C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv line 51
+# Compile of test.sv was successful with warnings.
+restart
+# Loading work.sched_test
+run -all
+# ** Note: $stop    : C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv(51)
+#    Time: 300015 ps  Iteration: 1  Instance: /sched_test
+# Break in Module sched_test at C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv line 51
+# Compile of test.sv was successful.
+restart
+# Loading work.sched_test
+run -all
+# ** Note: $stop    : C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv(51)
+#    Time: 300015 ps  Iteration: 1  Instance: /sched_test
+# Break in Module sched_test at C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv line 51
+# Compile of test.sv was successful.
+restart
+# Loading work.sched_test
+run -all
+# ** Note: $stop    : C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv(51)
+#    Time: 300015 ps  Iteration: 1  Instance: /sched_test
+# Break in Module sched_test at C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv line 51
+# Compile of test.sv was successful.
+restart
+# Loading work.sched_test
+run -all
+# ** Note: $stop    : C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv(51)
+#    Time: 300015 ps  Iteration: 1  Instance: /sched_test
+# Break in Module sched_test at C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv line 51
+# Compile of scheduler.sv failed with 1 errors.
+# Compile of scheduler.sv was successful.
+# Compile of scheduler.sv was successful.
+restart
+# Loading work.scheduler
+run -all
+# ** Note: $stop    : C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv(51)
+#    Time: 300015 ps  Iteration: 1  Instance: /sched_test
+# Break in Module sched_test at C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv line 51
+# Compile of scheduler.sv failed with 1 errors.
+# Compile of scheduler.sv was successful.
+restart
+# Loading work.scheduler
+run -all
+# ** Note: $stop    : C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv(51)
+#    Time: 300015 ps  Iteration: 1  Instance: /sched_test
+# Break in Module sched_test at C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv line 51

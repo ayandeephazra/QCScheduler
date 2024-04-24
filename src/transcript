@@ -1,2 +1,67 @@
 # Compile of scheduler.sv was successful.
 # Compile of scheduler.sv was successful.
+# Compile of scheduler.sv was successful.
+# Compile of test.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of scheduler.sv was successful.
+# Compile of scheduler.sv was successful.
+# Compile of scheduler.sv was successful.
+# Compile of scheduler.sv was successful.
+# Compile of test.sv failed with 2 errors.
+# Compile of test.sv failed with 2 errors.
+# Compile of test.sv failed with 1 errors.
+# Compile of test.sv was successful.
+# Compile of test.sv failed with 2 errors.
+# Compile of test.sv was successful.
+# Compile of scheduler.sv was successful.
+# Compile of test.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of test.sv failed with 2 errors.
+# Compile of test.sv was successful.
+vsim -gui work.sched_test
+# vsim -gui work.sched_test 
+# Start time: 07:40:00 on Apr 24,2024
+# Loading sv_std.std
+# Loading work.sched_test
+# Loading work.scheduler
+add wave -position insertpoint sim:/sched_test/isc0/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ayan Deep Hazra  Hostname: LAPTOP-F99DH5B4  ProcessID: 17160
+#           Attempting to use alternate WLF file "./wlftsxsezn".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftsxsezn
+run -all
+# ** Note: $stop    : C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv(51)
+#    Time: 300015 ps  Iteration: 1  Instance: /sched_test
+# Break in Module sched_test at C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv line 51
+# Compile of test.sv was successful with warnings.
+restart
+# Loading work.sched_test
+run -all
+# ** Note: $stop    : C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv(51)
+#    Time: 300015 ps  Iteration: 1  Instance: /sched_test
+# Break in Module sched_test at C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv line 51
+# Compile of scheduler.sv was successful.
+# Compile of test.sv was successful with warnings.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.sched_test
+# Loading work.scheduler
+run -all
+# ** Note: $stop    : C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv(51)
+#    Time: 300015 ps  Iteration: 1  Instance: /sched_test
+# Break in Module sched_test at C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv line 51
+# Compile of scheduler.sv was successful.
+restart
+# Loading work.scheduler
+run -all
+# ** Note: $stop    : C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv(51)
+#    Time: 300015 ps  Iteration: 1  Instance: /sched_test
+# Break in Module sched_test at C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv line 51
+# Compile of test.sv was successful with warnings.
+restart
+# Loading work.sched_test
+run -all
+# ** Note: $stop    : C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv(51)
+#    Time: 300015 ps  Iteration: 1  Instance: /sched_test
+# Break in Module sched_test at C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv line 51

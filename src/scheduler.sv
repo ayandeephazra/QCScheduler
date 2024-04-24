@@ -85,6 +85,7 @@ module scheduler # (parameter DEPTH = 64, NUM_FPGA = 64, NUM_QUBIT_PER_FPGA = 64
 					regs_layer2[j] <= {regs_layer1[lreg_index++][INST_INDEX_MSB:START_TIME_LSB],4'b1000};
 					lreg_population++;
 				end
+				
 		end
 	end
 	

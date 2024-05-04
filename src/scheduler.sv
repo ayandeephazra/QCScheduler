@@ -47,7 +47,9 @@ module scheduler # (parameter DEPTH = 64, NUM_FPGA = 64, NUM_QUBIT_PER_FPGA = 64
 		for(i = 0; i<NUM_REGS_L1; i++)
 			if (~regs_layer1[i][3] & instruction[ireg_index][3]) begin
 				status[ireg_index] = 0;
-				regs_layer1[i] <= {instruction[ireg_index++][INST_INDEX_MSB:START_TIME_LSB],4'b1000};
+				regs_layer1[i] <= {instruction[ireg_index][INST_INDEX_MSB:START_TIME_LSB],4'b1000};
+				
+				ireg_index++;
 			end
 	end
 	
@@ -82,7 +84,9 @@ module scheduler # (parameter DEPTH = 64, NUM_FPGA = 64, NUM_QUBIT_PER_FPGA = 64
 		else begin
 			for(j = 0; j<NUM_REGS_L2; j++)
 				if (~regs_layer2[j][3] & (curr_timestamp == regs_layer1[lreg_index][START_TIME_MSB:START_TIME_LSB]) ) begin
-					regs_layer2[j] <= {regs_layer1[lreg_index++][INST_INDEX_MSB:START_TIME_LSB],4'b1000};
+					regs_layer2[j] <= {regs_layer1[lreg_index][INST_INDEX_MSB:START_TIME_LSB],4'b1000};
+					regs_layer1[lreg_index] <= 0;
+					lreg_index++;
 					lreg_population++;
 				end
 				

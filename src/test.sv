@@ -20,13 +20,7 @@ module sched_test();
 		.status(status),
 		.ireg_index(ireg_index)					
 	);
-	/*
-	task send_instr(input [55:0] data);
-		@(posedge clk);
-		instr = data;
-		valid = 1;
-	endtask
-	*/
+
 	initial begin
 		clk = 0;
 		rst_n = 0;
@@ -34,14 +28,14 @@ module sched_test();
 		@(posedge clk);
 		rst_n = 1;
 
-		for (i = 0; i< 25; i++)
-			instr[i]  = {54'h1DDDDDdddddddd, 4'b1000};
-		for (i = 25; i< 50; i++)
-			instr[i]  = {54'h0ccccccccccccc, 4'b1000};
+		for (i = 0; i< 35; i++)
+			instr[i]  = {54'h1DDDDDdddd0001, 4'b1000};
+		for (i = 35; i< 50; i++)
+			instr[i]  = {54'h0ccccccccc0005, 4'b1000};
 		for (i = 50; i< 75; i++)
-			instr[i]  = {54'h3bbbbbbbbbbbbb, 4'b1000};
+			instr[i]  = {54'h3bbbbbbbbb0009, 4'b1000};
 		for (i = 75; i< 100; i++)
-			instr[i]  = {54'h2aaaaaaaaaaaaa, 4'b1000};
+			instr[i]  = {54'h2aaaaaaaaa000c, 4'b1000};
 
 		@(posedge clk);
 

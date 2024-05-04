@@ -144,3 +144,48 @@ run -all
 # ** Note: $stop    : C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv(51)
 #    Time: 300015 ps  Iteration: 1  Instance: /sched_test
 # Break in Module sched_test at C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv line 51
+# Compile of scheduler.sv was successful.
+# Compile of test.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.sched_test
+# Loading work.scheduler
+run -all
+# ** Note: $stop    : C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv(51)
+#    Time: 300015 ps  Iteration: 1  Instance: /sched_test
+# Break in Module sched_test at C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv line 51
+# Compile of scheduler.sv was successful.
+# Compile of test.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of scheduler.sv was successful.
+# Compile of test.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of test.sv was successful.
+restart
+# Loading work.sched_test
+# Loading work.scheduler
+# ** Error (suppressible): (vsim-12003) C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/scheduler.sv(51): Variable '/sched_test/isc0/instruction' written by continuous and procedural assignments. See C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv(16).
+#    Time: 0 ps  Iteration: 0  Instance: /sched_test/isc0 File: C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/scheduler.sv
+# Compile of scheduler.sv was successful.
+vsim -gui work.sched_test
+# vsim -gui work.sched_test 
+# Start time: 07:40:00 on Apr 24,2024
+# Loading sv_std.std
+# Loading work.sched_test
+# Loading work.scheduler
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ayan Deep Hazra  Hostname: LAPTOP-F99DH5B4  ProcessID: 17160
+#           Attempting to use alternate WLF file "./wlft8sx2mz".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft8sx2mz
+run -all
+# ** Note: $stop    : C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv(45)
+#    Time: 300015 ps  Iteration: 1  Instance: /sched_test
+# Break in Module sched_test at C:/Users/AMD_001/Desktop/GitHub/QCScheduler/src/test.sv line 45
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# End time: 01:46:56 on Apr 25,2024, Elapsed time: 18:06:56
+# Errors: 11, Warnings: 5
